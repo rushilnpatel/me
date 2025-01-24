@@ -10,9 +10,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#app:hover{
+  /* filter: drop-shadow(radial-gradiant(50% 50%, 100%, #0000 0%, #0000 100%)); */
+  /* border: 10px solid red; */
+}
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.vanilla:hover {
   filter: drop-shadow(0 0 2em #3178c6aa);
