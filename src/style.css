@@ -21,3 +21,6 @@
   filter: drop-shadow(0 0 2em #3178c6aa);
 }
 
+.nav a.active .nav-text {
+  @apply text-slate-200; /* Change to your desired active color */
+}
