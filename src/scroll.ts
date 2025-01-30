@@ -14,9 +14,8 @@ let observer: IntersectionObserver;
 
 const observeSections = () => {
   const sections = document.querySelectorAll('main>section');
-  console.log("🚀 ~ observeSections ~ sections:", sections)
 
-  const options = {
+  const options: IntersectionObserverInit = {
     root: null,
     rootMargin: '0px',
     threshold: 0.4,
@@ -25,10 +24,8 @@ const observeSections = () => {
   observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       const id = entry.target.getAttribute('id');
-      console.log("🚀 ~ entries.forEach ~ id:", id)
       const navLink = document.querySelector(`.nav a[href="#${id}"]`);
 
-      console.log("🚀 ~ entries.forEach ~ navLink:", navLink)
       if (entry.isIntersecting) {
         navLink?.classList.add('active');
       } else {
