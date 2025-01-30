@@ -4,6 +4,6 @@ import { observeBreakpoint } from "./scroll.ts";
 import template  from "./template.html?raw";
 
 
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = `${template}`;
+document.querySelector<HTMLDivElement>("#app")!.innerHTML = template;
 
 observeBreakpoint();
